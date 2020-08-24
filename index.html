@@ -8,14 +8,15 @@
     <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase-storage.js"></script>
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <title>To-do</title>
+    <title>Firebase</title>
   </head>
 
   <body>
     <fieldset id="form">
+      <h1 class="msg">Firebase Authentication</h1>
       <h3>Sign Up / Sign In</h3>
       <label>Email</label>
-      <input id="email" type="text" /> <br />
+      <input id="email" type="text" autocomplete="off" /> <br />
       <label>Password</label>
       <input id="password" type="password" /> (at least 6 characters)<br />
       <button id="sign-up">Sign Up</button>
@@ -24,20 +25,24 @@
       <br /><br />
       <div id="msg"></div>
     </fieldset>
-
-    <h1 id="msg">Firebase Storage 🗃️</h1>
-    <br />
-    <label class="upload-group">
-      Upload File <input type="file" id="file" />
-    </label>
-    Then click and wait:<button class="btn btn-primary" id="uploadBtn">
-      upload
-    </button>
-    <div>
-      <img id="img" src="" />
-    </div>
-    <div>
-      <h4 id="outcome"></h4>
+    <div id="storage">
+      <h1 class="msg">Firebase Storage 🗃️</h1>
+      <br />
+      <label class="upload-group">
+        Select File <input type="file" id="file" />
+      </label>
+      Then, click and wait to load:<button
+        class="btn btn-primary"
+        id="uploadBtn"
+      >
+        Upload image
+      </button>
+      <div>
+        <img id="img" src="" />
+      </div>
+      <div>
+        <h4 id="outcome"></h4>
+      </div>
     </div>
     <script src="js/main.js"></script>
   </body>

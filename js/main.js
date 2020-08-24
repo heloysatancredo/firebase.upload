@@ -52,6 +52,7 @@ function sUp() {
     .catch(function (error) {
       console.log(error.code)
       console.log(error.message)
+      $('#msg').html(error.message)
     })
   //console.log(email);
 }
@@ -73,6 +74,7 @@ function sIn() {
       var errorMessage = error.message
       console.log(errorCode)
       console.log(errorMessage)
+      $('#msg').html(errorMessage + 'Or please try to Sign Up first.')
     })
   $('#todo').css('display', 'block')
 }

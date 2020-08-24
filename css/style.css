@@ -1,5 +1,5 @@
 body {
-  background: pink;
+  background: #FDE8F3;
   height: 100vh;
   margin: 0;
   /*display: flex;*/
@@ -16,11 +16,13 @@ label, input, button {
   font-size: 16px;
   min-width: 90px;
   display: inline-block;
+  border-radius: 5px;
 }
 
 button {
-  border: solid 1px white;
-  border-radius: 20px;
+  border: solid 1px pink;
+  border-radius: 5px;
+  margin-top: 15px;
 }
 
 #todo {
@@ -28,6 +30,10 @@ button {
   /*display: block;*/
 }
 
-#msg {
-  color: blue;
+#msg, .msg {
+  color: #2874A6;
+}
+
+#storage {
+  padding: 15px;
 }
